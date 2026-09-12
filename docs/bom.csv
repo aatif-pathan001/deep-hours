@@ -1,0 +1,8 @@
+﻿Name,Quantity,Component
+"U1",1," Arduino Uno R3"
+"Digit1, Digit2",2,"Cathode 7 Segment Display"
+"R1, R2, R3, R4, R5, R6, R7, R8",8,"680 Ω Resistor"
+"1",1," Breadboard Small"
+"T1, T2",2," NPN Transistor (BJT)"
+"R9, R10",2,"1 kΩ Resistor"
+"S1",1," Pushbutton"

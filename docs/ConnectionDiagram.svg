@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1770" viewBox="0 0 1400 1770"><rect width="100%" height="100%" fill="#f5f7fb"/>
+<text x="40" y="59" font-family="DejaVu Sans,Arial,sans-serif" font-size="34" fill="#18263b">Study timer | clear wiring guide</text>
+<text x="40" y="100" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#18263b">REAL HARDWARE: classic 5 V Nano + two common-cathode single-digit displays</text>
+<text x="40" y="138" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">Read each numbered section. Segment names are NOT physical leg numbers.</text>
+<rect x="30" y="165" width="1340" height="740" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="55" y="210" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#18263b">1  Connect the eight shared segment wires</text>
+<text x="55" y="250" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">One resistor per row. After the resistor, split the wire to BOTH displays.</text>
+<text x="55" y="289" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#18263b">NANO</text>
+<text x="285" y="289" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#18263b">RESISTOR</text>
+<text x="640" y="289" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#18263b">LEFT DISPLAY</text>
+<text x="1010" y="289" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#18263b">RIGHT DISPLAY</text>
+<text x="70" y="352" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#18263b">D2</text>
+<polyline points="130,342 295,342" fill="none" stroke="#b34d32" stroke-width="3"/>
+<rect x="295" y="333" width="80" height="18" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="293" y="322" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">680 ohm</text>
+<polyline points="375,342 535,342 640,342" fill="none" stroke="#b34d32" stroke-width="3"/>
+<circle cx="535" cy="342" r="5" fill="#b34d32"/>
+<rect x="640" y="326" width="230" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="655" y="349" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">LEFT a</text>
+<polyline points="535,342 535,367 990,367 990,342 1010,342" fill="none" stroke="#b34d32" stroke-width="3"/>
+<rect x="1010" y="326" width="290" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="1025" y="349" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">RIGHT a</text>
+<text x="70" y="417" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#18263b">D3</text>
+<polyline points="130,407 295,407" fill="none" stroke="#93700a" stroke-width="3"/>
+<rect x="295" y="398" width="80" height="18" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="293" y="387" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">680 ohm</text>
+<polyline points="375,407 535,407 640,407" fill="none" stroke="#93700a" stroke-width="3"/>
+<circle cx="535" cy="407" r="5" fill="#93700a"/>
+<rect x="640" y="391" width="230" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="655" y="414" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">LEFT b</text>
+<polyline points="535,407 535,432 990,432 990,407 1010,407" fill="none" stroke="#93700a" stroke-width="3"/>
+<rect x="1010" y="391" width="290" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="1025" y="414" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">RIGHT b</text>
+<text x="70" y="482" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#18263b">D4</text>
+<polyline points="130,472 295,472" fill="none" stroke="#408329" stroke-width="3"/>
+<rect x="295" y="463" width="80" height="18" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="293" y="452" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">680 ohm</text>
+<polyline points="375,472 535,472 640,472" fill="none" stroke="#408329" stroke-width="3"/>
+<circle cx="535" cy="472" r="5" fill="#408329"/>
+<rect x="640" y="456" width="230" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="655" y="479" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">LEFT c</text>
+<polyline points="535,472 535,497 990,497 990,472 1010,472" fill="none" stroke="#408329" stroke-width="3"/>
+<rect x="1010" y="456" width="290" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="1025" y="479" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">RIGHT c</text>
+<text x="70" y="547" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#18263b">D5</text>
+<polyline points="130,537 295,537" fill="none" stroke="#087e78" stroke-width="3"/>
+<rect x="295" y="528" width="80" height="18" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="293" y="517" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">680 ohm</text>
+<polyline points="375,537 535,537 640,537" fill="none" stroke="#087e78" stroke-width="3"/>
+<circle cx="535" cy="537" r="5" fill="#087e78"/>
+<rect x="640" y="521" width="230" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="655" y="544" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">LEFT d</text>
+<polyline points="535,537 535,562 990,562 990,537 1010,537" fill="none" stroke="#087e78" stroke-width="3"/>
+<rect x="1010" y="521" width="290" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="1025" y="544" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">RIGHT d</text>
+<text x="70" y="612" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#18263b">D6</text>
+<polyline points="130,602 295,602" fill="none" stroke="#2268b2" stroke-width="3"/>
+<rect x="295" y="593" width="80" height="18" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="293" y="582" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">680 ohm</text>
+<polyline points="375,602 535,602 640,602" fill="none" stroke="#2268b2" stroke-width="3"/>
+<circle cx="535" cy="602" r="5" fill="#2268b2"/>
+<rect x="640" y="586" width="230" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="655" y="609" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">LEFT e</text>
+<polyline points="535,602 535,627 990,627 990,602 1010,602" fill="none" stroke="#2268b2" stroke-width="3"/>
+<rect x="1010" y="586" width="290" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="1025" y="609" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">RIGHT e</text>
+<text x="70" y="677" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#18263b">D7</text>
+<polyline points="130,667 295,667" fill="none" stroke="#6455b1" stroke-width="3"/>
+<rect x="295" y="658" width="80" height="18" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="293" y="647" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">680 ohm</text>
+<polyline points="375,667 535,667 640,667" fill="none" stroke="#6455b1" stroke-width="3"/>
+<circle cx="535" cy="667" r="5" fill="#6455b1"/>
+<rect x="640" y="651" width="230" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="655" y="674" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">LEFT f</text>
+<polyline points="535,667 535,692 990,692 990,667 1010,667" fill="none" stroke="#6455b1" stroke-width="3"/>
+<rect x="1010" y="651" width="290" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="1025" y="674" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">RIGHT f</text>
+<text x="70" y="742" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#18263b">D8</text>
+<polyline points="130,732 295,732" fill="none" stroke="#a43b80" stroke-width="3"/>
+<rect x="295" y="723" width="80" height="18" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="293" y="712" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">680 ohm</text>
+<polyline points="375,732 535,732 640,732" fill="none" stroke="#a43b80" stroke-width="3"/>
+<circle cx="535" cy="732" r="5" fill="#a43b80"/>
+<rect x="640" y="716" width="230" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="655" y="739" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">LEFT g</text>
+<polyline points="535,732 535,757 990,757 990,732 1010,732" fill="none" stroke="#a43b80" stroke-width="3"/>
+<rect x="1010" y="716" width="290" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="1025" y="739" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">RIGHT g</text>
+<text x="70" y="807" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#18263b">D9</text>
+<polyline points="130,797 295,797" fill="none" stroke="#526473" stroke-width="3"/>
+<rect x="295" y="788" width="80" height="18" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="293" y="777" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">680 ohm</text>
+<polyline points="375,797 535,797 640,797" fill="none" stroke="#526473" stroke-width="3"/>
+<circle cx="535" cy="797" r="5" fill="#526473"/>
+<rect x="640" y="781" width="230" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="655" y="804" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">LEFT dp</text>
+<polyline points="535,797 535,822 990,822 990,797 1010,797" fill="none" stroke="#526473" stroke-width="3"/>
+<rect x="1010" y="781" width="290" height="34" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="1025" y="804" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">RIGHT dp</text>
+<text x="55" y="886" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#18263b">Example: D2 → 680 ohm resistor → one branch to left a, another branch to right a.</text>
+<rect x="30" y="930" width="1340" height="440" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="55" y="976" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#18263b">2  Connect one transistor driver to each display</text>
+<text x="55" y="1014" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">Q1 and Q2 are NPN transistors. Their collectors must remain separate.</text>
+<text x="55" y="1062" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" fill="#18263b">D10 controls LEFT digit</text>
+<text x="55" y="1139" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" fill="#18263b">D10</text>
+<polyline points="112,1130 155,1130" fill="none" stroke="#247b91" stroke-width="3"/>
+<rect x="155" y="1121" width="80" height="18" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="153" y="1110" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">1k ohm</text>
+<polyline points="235,1130 275,1130 355,1130" fill="none" stroke="#247b91" stroke-width="3"/>
+<circle cx="275" cy="1130" r="5" fill="#247b91"/>
+<rect x="355" y="1088" width="95" height="132" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="375" y="1116" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" fill="#18263b">Q1</text>
+<text x="365" y="1140" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#18263b">B</text>
+<text x="424" y="1115" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#18263b">C</text>
+<text x="424" y="1203" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#18263b">E</text>
+<polyline points="450,1105 485,1105 485,1078 640,1078" fill="none" stroke="#247b91" stroke-width="3"/>
+<text x="495" y="1045" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">LEFT display</text>
+<text x="495" y="1068" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">ALL COM legs</text>
+<polyline points="450,1200 485,1200 485,1290 275,1290 275,1250" fill="none" stroke="#247b91" stroke-width="3"/>
+<polyline points="275,1130 275,1180" fill="none" stroke="#247b91" stroke-width="3"/>
+<rect x="266" y="1180" width="18" height="70" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="160" y="1218" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">10k ohm</text>
+<circle cx="485" cy="1290" r="5" fill="#247b91"/>
+<polyline points="485,1290 615,1290" fill="none" stroke="#247b91" stroke-width="3"/>
+<text x="505" y="1321" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#18263b">Nano GND</text>
+<text x="55" y="1352" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">B = base   C = collector   E = emitter</text>
+<text x="735" y="1062" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" fill="#18263b">D11 controls RIGHT digit</text>
+<text x="735" y="1139" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" fill="#18263b">D11</text>
+<polyline points="792,1130 835,1130" fill="none" stroke="#247b91" stroke-width="3"/>
+<rect x="835" y="1121" width="80" height="18" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="833" y="1110" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">1k ohm</text>
+<polyline points="915,1130 955,1130 1035,1130" fill="none" stroke="#247b91" stroke-width="3"/>
+<circle cx="955" cy="1130" r="5" fill="#247b91"/>
+<rect x="1035" y="1088" width="95" height="132" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="1055" y="1116" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" fill="#18263b">Q2</text>
+<text x="1045" y="1140" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#18263b">B</text>
+<text x="1104" y="1115" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#18263b">C</text>
+<text x="1104" y="1203" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#18263b">E</text>
+<polyline points="1130,1105 1165,1105 1165,1078 1320,1078" fill="none" stroke="#247b91" stroke-width="3"/>
+<text x="1175" y="1045" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">RIGHT display</text>
+<text x="1175" y="1068" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">ALL COM legs</text>
+<polyline points="1130,1200 1165,1200 1165,1290 955,1290 955,1250" fill="none" stroke="#247b91" stroke-width="3"/>
+<polyline points="955,1130 955,1180" fill="none" stroke="#247b91" stroke-width="3"/>
+<rect x="946" y="1180" width="18" height="70" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="840" y="1218" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">10k ohm</text>
+<circle cx="1165" cy="1290" r="5" fill="#247b91"/>
+<polyline points="1165,1290 1295,1290" fill="none" stroke="#247b91" stroke-width="3"/>
+<text x="1185" y="1321" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#18263b">Nano GND</text>
+<text x="735" y="1352" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#18263b">B = base   C = collector   E = emitter</text>
+<rect x="30" y="1395" width="1340" height="195" fill="white" stroke="#b5c2d3" stroke-width="2"/>
+<text x="55" y="1440" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#18263b">3  Connect the button and power</text>
+<text x="60" y="1486" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" fill="#18263b">Nano D12</text>
+<polyline points="190,1480 330,1480" fill="none" stroke="#247b91" stroke-width="3"/>
+<circle cx="330" cy="1480" r="5" fill="#247b91"/>
+<circle cx="415" cy="1480" r="5" fill="#247b91"/>
+<polyline points="330,1480 404,1455" fill="none" stroke="#247b91" stroke-width="3"/>
+<polyline points="415,1480 560,1480" fill="none" stroke="#247b91" stroke-width="3"/>
+<text x="580" y="1486" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" fill="#18263b">Nano GND</text>
+<text x="265" y="1530" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#18263b">Normally-open push button</text>
+<text x="800" y="1486" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#18263b">Power: Nano USB connector</text>
+<text x="800" y="1526" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#18263b">Unplug USB while wiring.</text>
+<text x="60" y="1574" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#18263b">Optional second button: A0 → switch → GND. Set ONE_BUTTON_MODE = false.</text>
+<text x="40" y="1644" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#18263b">Before connecting physical legs</text>
+<text x="40" y="1682" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#18263b">Use your display datasheet to identify a–g, dp and COM. Use the transistor datasheet for B/C/E.</text>
+<text x="40" y="1720" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#18263b">This is the physical-build circuit. Wokwi uses two NOT gates instead of the transistor drivers.</text>
+</svg>
