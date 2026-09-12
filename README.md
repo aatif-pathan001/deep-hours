@@ -1,30 +1,26 @@
-# Arduino Study Timer
+# Arduino DeepHours Timer [![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)](https://www.arduino.cc/) [![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)](StudyTimer/StudyTimer.ino) [![Tinkercad](https://img.shields.io/badge/Tinkercad-FF6F00?style=for-the-badge&logo=tinkercad&logoColor=white)](StudyTimer_Tinkercad/StudyTimer_Tinkercad.ino)
 
-A small study-session timer built with a classic Arduino Nano, two single-digit seven-segment displays, and one or two buttons. It counts elapsed time internally and switches between hours and minutes on the two-digit display.
+DeepHours is an open-source, physical desk timer engineered to track long-form, distraction-free work sessions. Built around an Arduino Nano and a multiplexed dual 7-segment display, it provides a tactile, zero-distraction alternative to digital timer apps. \
+Unlike simple countdown timers, DeepHours continuously measures accumulated seconds, minutes, and hours in the background. Using non-blocking millis() architecture and gesture-based single-button controls, it lets you seamlessly switch between viewing current minutes and total focus hours with visual LED status indicators.
 
-**Status:** prototype. Host-side logic tests pass. Physical hardware operation and the revised sketch's Tinkercad compilation have not yet been confirmed. GitHub Actions is included to compile both sketches for Nano and Uno after upload.
-
-![Study timer wiring diagram](docs/ConnectionDiagram.png)
-
-## Features
-
-- Start, pause, resume and reset a study session.
-- Switch between whole hours and minutes within the current hour.
-- Left digit's decimal point indicates hours; right digit's decimal point indicates minutes.
-- Keep seconds and fractional seconds internally across pauses.
-- Debounced button input and non-blocking display multiplexing.
-- Support one-button controls or a dedicated second view button.
-- Automatically pause at 99 hours, 59 minutes, 59 seconds.
-- No third-party Arduino libraries required.
+## Key Features
+* **Background Timekeeping:** Accurately tracks session durations up to 99 hours in real time without halting main execution loops.
+* **Single-Button Gesture Control:**
+  * **Short Press:** Start / Pause time tracking.
+  * **2-Second Hold:** Toggle display between **Minutes View** (`MM`) and **Hours View** (`HH`).
+  * **5-Second Hold:** Reset total recorded time to zero.
+* **Visual Status Indicators:** Uses decimal point LEDs to denote active views (Left DP for Hours, Right DP for Minutes). When paused, both decimal points remain OFF; upon resuming, the corresponding decimal point illuminates based on the active view.
+* **Multiplexed Hardware Design:** Efficient pin allocation driving two common-cathode displays via NPN transistor switching.
+* **Zero Digital Distractions:** Dedicated hardware setup designed to build flow state and measure dedicated deep work blocks.
+* Keep seconds and fractional seconds internally across pauses.
+* Debounced button input and non-blocking display multiplexing.
+* No third-party Arduino libraries required.
 
 ## Choose your sketch
 
 | Environment | File |
 | --- | --- |
-| Arduino IDE: classic Nano or Uno | [StudyTimer/StudyTimer.ino](StudyTimer/StudyTimer.ino) |
-| Tinkercad: Arduino Uno | [StudyTimer_Tinkercad/StudyTimer_Tinkercad.ino](StudyTimer_Tinkercad/StudyTimer_Tinkercad.ino) |
-
-Both sketches use the same pin assignments and intended behaviour. The Tinkercad version uses built-in integer types and plain arrays, and omits an explicit Arduino header include to avoid the declaration errors encountered with the original sketch in Tinkercad. Maintain equivalent changes in both versions.
+| Arduino IDE: classic Nano or Uno | [DeepHours/DeepHours.ino](DeepHours/DeepHours.ino) |
 
 ## Parts
 
@@ -64,17 +60,11 @@ Each transistor's collector connects to its own display's common-cathode legs. E
 
 ## Controls
 
-Default: `ONE_BUTTON_MODE = true`.
-
 | Gesture | Action |
 | --- | --- |
-| Short press and release, under 1 second | Start / pause / resume |
-| Hold 1 to less than 5 seconds, then release | Switch hours/minutes |
-| Hold at least 5 seconds | Reset to zero and pause |
-
-Reset happens while held; releasing afterwards does not restart the timer. Time continues during a hold until paused or reset. The built-in LED is on while running.
-
-For two buttons, set `ONE_BUTTON_MODE = false`. D12 starts/pauses on release and resets on a 5-second hold. A0 switches the view on press.
+| Short press | Start / pause / resume |
+| Hold 2 to 4 seconds, then release | Switch hours/minutes |
+| Hold at least 5 seconds | Reset to zero |
 
 ## Reading the time
 
@@ -86,36 +76,6 @@ The two digits do not show HH:MM simultaneously. For **4,000 seconds** of study 
 
 Minutes range from 00 to 59. Hours below 10 have a blank leading digit. The decimal points identify units, not decimal fractions.
 
-## Upload to hardware
-
-1. Open `StudyTimer/StudyTimer.ino` in Arduino IDE.
-2. Install Arduino AVR Boards if necessary.
-3. Choose Arduino Nano, processor ATmega328P, and your board's port. Older Nano clones may require ATmega328P (Old Bootloader). For an Uno, select Arduino Uno.
-4. Choose the button mode, verify, then upload.
-
-Keep each `.ino` inside the folder with the same name. Do not combine the two sketches into one folder.
-
-## Simulate in Tinkercad
-
-1. Create an Arduino Uno circuit with the components and wiring above.
-2. Select Code → Text and replace all existing code with the Tinkercad sketch.
-3. Set the display type to common cathode and select your button mode in the code.
-4. Start the simulation. It should begin paused at 00 minutes.
-5. Press/release D12's button to start. The first minute increment requires 60 seconds of simulated running time.
-
-The revised Tinkercad sketch has passed local logic tests, but a successful Tinkercad run has not yet been reported. See [troubleshooting](docs/TROUBLESHOOTING.md).
-
-## Verification
-
-Run local tests with Python 3 and g++:
-
-```sh
-python3 tests/run_tests.py
-```
-
-Tests cover both sketches in both button modes: debounce, start/pause/resume, retained fractions, hour/minute conversion, clock rollover, reset release suppression and the maximum duration. Arduino APIs are stubbed; the runner models AVR's 32-bit `unsigned long` on hosts where it is 64-bit. These tests do not emulate display electronics or an AVR processor.
-
-The [GitHub Actions workflow](.github/workflows/compile.yml) compiles both sketches for Nano and Uno, in both button modes, on pushes and pull requests. It has not been run on GitHub yet. A successful compile is not proof of correct wiring or physical operation.
 
 ## Limitations
 
@@ -123,23 +83,13 @@ The [GitHub Actions workflow](.github/workflows/compile.yml) compiles both sketc
 - No calendar, daily total, real-time clock or saved session log.
 - Timing depends on the board oscillator and can drift.
 - At 99:59:59 the timer stops; reset before another session.
-- Wokwi supports Nano, but its transistor-driver simulation needs a separate adaptation. This repository does not contain a ready-to-run Wokwi project.
-
+- 
 ## Repository files
 
 | Path | Purpose |
 | --- | --- |
-| `StudyTimer/` | Arduino IDE sketch |
-| `StudyTimer_Tinkercad/` | Tinkercad-compatible source variant |
-| `docs/` | Wiring images, build guide and troubleshooting |
-| `tests/` | Reproducible host-side logic checks |
-| `.github/workflows/compile.yml` | Nano/Uno compilation checks |
-| `CONTRIBUTING.md` | Change and bug-report guidance |
-| `PUBLISHING.md` | Upload this folder to GitHub |
-
-## Licensing
-
-No open-source license has been selected. Public availability on GitHub does not itself grant general permission to reuse or redistribute this project. The repository owner should choose a license and add a `LICENSE` file if they want to grant those permissions.
+| `DeepHours/` | Arduino IDE sketch |
+| `docs/` | Wiring images, build guide and concept sketch |
 
 ## References
 
